@@ -36,28 +36,30 @@
 	    <!-- JSON-LD informations de l'entreprise-->
 		<script type="application/ld+json">
 			{
-			  "@context": "http://schema.org",
-			  "@type": "PhotographyBusiness",
+			  "@context": "https://schema.org",
+			  "@type": "LocalBusiness",
+			  "name": "Nina Carducci Photography",
+			  "description": "Nina Carducci, photographe professionnelle située à Bordeaux propose shootings, retouches et créations d'albums photos.",
+			  "url": "https://nina-carducci.github.io/",
+			  "telephone": "+33556677889",
 			  "address": {
 				"@type": "PostalAddress",
+				"streetAddress": "68 Avenue Alsace Lorraine",
 				"addressLocality": "Bordeaux",
 				"postalCode": "33200",
-				"streetAddress": "68 Avenue Alsace Lorraine",
+				"addressRegion": "Nouvelle-Aquitaine",
 				"addressCountry": "FR"
 			  },
-			  "description": "Nina Carducci, photographe professionnelle située à Bordeaux propose shootings, retouches et créations d'albums photos",
 			  "geo": {
 				"@type": "GeoCoordinates",
-				"latitude": 44.84713717562842,
-				"longitude": -0.6043049799659345
+				"latitude": 44.841225,
+				"longitude": -0.5800364
 			  },
-			  "name": "Nina Carducci",
 			  "openingHours": "Mo-Fr 10:00-19:00",
 			  "priceRange": "N/A",
-			  "telephone": "+33556677889",
-			  "url": "https://nina-carducci.github.io/"
+			  "image": "https://nina-carducci.github.io/assets/images/nina.webp"
 			}
-		</script>
+			</script>
 </head>
 <body>
 <div class="top-header">
@@ -222,7 +224,7 @@
 		  <h3 itemprop="name">Shooting photo</h3>
 		  <p itemprop="description">
 			Pour capturer vos moments les plus précieux et garder un souvenir
-			impérissable. Je me déplace en Île-de-France pour réaliser vos
+			impérissable. Je me déplace en Île-de-France et sur  pour réaliser vos
 			photos
 		  </p>
 		  <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="toChangeContentLater">
@@ -323,9 +325,17 @@
 		</form>
 		<div class="telephone" itemscope itemtype="http://microformats.org/profile/hcard">
 		  <p class="phone">	&#x260E</p>
-		  <p itemprop="tel" class="phoneNumber"><a href="tel:+331556677889">05 56 67 78 89</a></p>
-		  </div>
-	  </div>
+		  <p itemprop="telephone" class="phoneNumber">05 56 67 78 89</p>
+		</div>
+		<address>
+			<div class="event-venue" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<span itemprop="streetAddress">68 Avenue Alsace Lorraine</span>
+				<span itemprop="postalCode">33200</span> 
+				<span itemprop="addressLocality">BORDEAUX</span>
+				<span itemprop=”addressRegion”> Nouvelle-Aquitaine</span>
+			</div>
+		</address>
+	</div>
 	  <div class="picture right">
 		<img itemprop="image" src="./assets/images/camera-min.webp" alt="appareil photo"/>
 	  </div>
