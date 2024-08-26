@@ -129,7 +129,7 @@
 	</div>
   </div>
   <div itemprop="section" id="gallery" role="region" aria-label="Galerie de photos">
-	<!-- Utilisation de la bonne balise h (anciennement h3) -->
+	
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 	  <div itemscope itemtype="https://schema.org/ImageGallery" class="gallery" style="display: none">
@@ -202,7 +202,7 @@
 	<div class="quote">
 	  <figure>
 		<blockquote itemprop="citation" itemscope itemtype="https://schema.org/CreativeWork">
-		  <!-- Utilisation de la bonne balise p (anciennement h1) -->
+		  
 		  <p itemprop="text" class="quote__text">
 			Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
 			qu’un fait est traduit en photo, il cesse d’être un fait pour
@@ -217,13 +217,12 @@
   </div>
   
   <div itemprop="section" id="services" role="region" aria-label="Mes services">
-	<!-- Utilisation de la bonne balise h (anciennement h3) -->
-	<!-- Les rich snipets de produits DOIVENT avoir une image, je l'ai masqué et il faudrait réfléchir à des images appropriés -->
+
 	<h2 class="title">Mes services</h2>
 	<div class="container">
 	  <div itemscope itemtype="https://schema.org/Product" class="service">
 		<div class="service__description">
-		  <h3 itemprop="name">Shooting photo</h3>
+		  <p class="titreservice" itemprop="name">Shooting photo</p>
 		  <p itemprop="description">
 			Pour capturer vos moments les plus précieux et garder un souvenir
 			impérissable. Je me déplace en Île-de-France et sur  pour réaliser vos
@@ -235,17 +234,17 @@
 		  </div>
 		</div>
 		<div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="service__price">
-		  <h4 itemprop="priceSpecification" itemscope itemtype="https://schema.org/PriceSpecification">
+		  <p class="prixservice" itemprop="priceSpecification" itemscope itemtype="https://schema.org/PriceSpecification">
 			<span itemprop="price">350</span>
 			<meta itemprop="priceCurrency" content="EUR" />
 			<span itemprop="text"> €/demi journée</span>
-		  </h4>
+		  </p>
 		  <span itemprop="text">Matériel, déplacement inclus</span>
 		</div>
 	  </div>
 	  <div itemscope itemtype="https://schema.org/Product" class="service">
 		<div class="service__description">
-		  <h3 itemprop="name">Retouches</h3>
+		  <p class="titreservice" itemprop="name">Retouches</p>
 		  <p itemprop="description">
 			Vous souhaitez retoucher vos photos pour un résultat professionnel
 			? Bénéficier d’un rendu optimal pour vos publications
@@ -256,17 +255,17 @@
 		  </div>
 		</div>
 		<div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="service__price">
-		  <h4 itemprop="priceSpecification" itemscope itemtype="https://schema.org/PriceSpecification">
+		  <p class="prixservice" itemprop="priceSpecification" itemscope itemtype="https://schema.org/PriceSpecification">
 			<span itemprop="price">50</span>
 			<meta itemprop="priceCurrency" content="EUR" />
 			<span itemprop="text"> €/photo</span>
-		  </h4>
+		  </p>
 		  <span itemprop="text">2 AR par photo</span>
 		</div>
 	  </div>
 	  <div itemscope itemtype="https://schema.org/Product" class="service">
 		<div class="service__description">
-		  <h3 itemprop="name">Album photos</h3>
+		  <p class="titreservice" itemprop="name">Album photos</p>
 		  <p itemprop="description">
 			Partagez avec vos proches et vos clients les photos des moments
 			partagés ensemble à travers un album photo personnalisé
@@ -277,11 +276,11 @@
 		  </div>
 		</div>
 		<div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="service__price">
-		  <h4 itemprop="priceSpecification" itemscope itemtype="https://schema.org/PriceSpecification">
+		  <p class="prixservice" itemprop="priceSpecification" itemscope itemtype="https://schema.org/PriceSpecification">
 			<span itemprop="price">400</span>
 			<meta itemprop="priceCurrency" content="EUR" />
 			<span itemprop="text"> €/album A4</span>
-		  </h4>
+		  </p>
 		  <span itemprop="text">30 pages recto/verso</span>
 		</div>
 	  </div>
@@ -290,7 +289,6 @@
   <div class="quote">
 	<figure>
 	  <blockquote itemprop="citation" itemscope itemtype="https://schema.org/CreativeWork">
-		<!-- Utilisation de la bonne balise p (anciennement h1) -->
 		<p itemprop="text" class="quote__text">
 		  De manière inconsciente, je crois, je guette un regard, une
 		  expression, des traits ou une nostalgie capable de résumer ou plus
@@ -305,12 +303,12 @@
   <div itemprop="section" id="contact" role="region" aria-label="Contactez-moi">
 	<div class="container">
 	  <div class="form-container">
-		<!-- Utilisation de la bonne balise h2 (anciennement h3) et ajout d'une classe pour meilleuire manipulation en CSS -->
-		<h2 class="form__title">Une question ? Une demande de devis ?</h2>
+		
+		<h3 class="form__title">Une question ? Une demande de devis ?</h3>
 		<p>
 		  N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
 		</p>
-		<!-- Ajout du numero de telephone -->
+		
 		<form itemscope itemtype="https://schema.org/ContactPoint" action="" method="post">
 		  <label for="nom">Nom</label>
 		  <input type="text" name="nom" id="nom" />
